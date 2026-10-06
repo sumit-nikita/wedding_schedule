@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aanya & Rohan — Wedding Schedule</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3eef6; --ink:#2e1840; --muted:#6d5a7b; --line:#d9cde3;
+  --accent:#e29a0f; --card:#fbf8fd;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 "DM Sans",system-ui,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:0 1.25rem 4rem}
+header{padding:4rem 0 2.5rem;text-align:center;border-bottom:3px solid var(--accent)}
+h1{font:700 clamp(2.4rem,9vw,4.2rem)/1.05 "Bodoni Moda",serif;margin:0 0 .75rem}
+.sub{margin:0;color:var(--muted);font-size:1.05rem}
+.day{margin-top:3rem}
+.day h2{font:500 1.6rem/1.2 "Bodoni Moda",serif;margin:0}
+.day .date{color:var(--muted);margin:.15rem 0 1rem}
+ul{list-style:none;margin:0;padding:0}
+.event{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;background:var(--card);
+  border-left:4px solid var(--accent);padding:1rem 1.1rem;margin-bottom:.75rem}
+.time{font-weight:700;font-variant-numeric:tabular-nums}
+.time small{display:block;font-weight:400;color:var(--muted)}
+.event h3{margin:0;font-size:1.1rem}
+.event p{margin:.2rem 0 0;color:var(--muted)}
+.dress{color:var(--ink);font-weight:500}
+footer{margin-top:3.5rem;text-align:center;color:var(--muted)}
+footer a{color:var(--ink)}
+@media (max-width:520px){.event{grid-template-columns:1fr;gap:.25rem}}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== EDIT: NAMES, DATE, VENUE ===== -->
+  <header>
+    <h1>Aanya &amp; Rohan</h1>
+    <p class="sub">12–14 February 2027 · Nagpur, Maharashtra</p>
+  </header>
+
+  <main>
+
+    <!-- ===== DAY 1: copy this whole <section> to add more days ===== -->
+    <section class="day">
+      <h2>Mehendi &amp; Sangeet</h2>
+      <p class="date">Friday, 12 February 2027 · Venue Name, Address</p>
+      <ul>
+        <!-- copy this <li> to add more events -->
+        <li class="event">
+          <div class="time">4:00 PM<small>to 7:00 PM</small></div>
+          <div>
+            <h3>Mehendi</h3>
+            <p>Garden Lawn · Light snacks and chai</p>
+            <p class="dress">Dress code: Bright colours</p>
+          </div>
+        </li>
+        <li class="event">
+          <div class="time">8:00 PM<small>to 11:30 PM</small></div>
+          <div>
+            <h3>Sangeet Night</h3>
+            <p>Main Hall · Dinner and dancing</p>
+            <p class="dress">Dress code: Festive</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== DAY 2 ===== -->
+    <section class="day">
+      <h2>Wedding Day</h2>
+      <p class="date">Saturday, 13 February 2027 · Venue Name, Address</p>
+      <ul>
+        <li class="event">
+          <div class="time">9:00 AM<small>to 10:30 AM</small></div>
+          <div>
+            <h3>Haldi</h3>
+            <p>Courtyard</p>
+            <p class="dress">Dress code: Yellow or white</p>
+          </div>
+        </li>
+        <li class="event">
+          <div class="time">11:30 AM</div>
+          <div>
+            <h3>Baraat Arrival</h3>
+            <p>Main Gate</p>
+          </div>
+        </li>
+        <li class="event">
+          <div class="time">12:30 PM</div>
+          <div>
+            <h3>Wedding Ceremony</h3>
+            <p>Mandap</p>
+            <p class="dress">Dress code: Traditional</p>
+          </div>
+        </li>
+        <li class="event">
+          <div class="time">2:00 PM</div>
+          <div>
+            <h3>Lunch</h3>
+            <p>Banquet Hall</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== DAY 3 ===== -->
+    <section class="day">
+      <h2>Reception</h2>
+      <p class="date">Sunday, 14 February 2027 · Venue Name, Address</p>
+      <ul>
+        <li class="event">
+          <div class="time">7:30 PM<small>onwards</small></div>
+          <div>
+            <h3>Reception Dinner</h3>
+            <p>Grand Ballroom</p>
+            <p class="dress">Dress code: Formal</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===== EDIT: CONTACT ===== -->
+  <footer>
+    <p>Questions? Call <a href="tel:+910000000000">+91 00000 00000</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
